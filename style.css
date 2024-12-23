@@ -1,0 +1,78 @@
+/* Styling untuk body */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 20px;
+    background: linear-gradient(135deg, #D9CAB3, #F4ECE2); /* Gradasi warna cokelat dan cream */
+    color: #4E342E; /* Warna teks */
+}
+
+/* Styling untuk tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #FAF3E0; /* Warna latar belakang tabel */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+th, td {
+    border: 1px solid #D9CAB3; /* Warna border */
+    padding: 12px; /* Padding */
+    text-align: left;
+}
+
+th {
+    background-color: #BFA78D; /* Warna cokelat terang untuk header */
+    color: white; /* Teks putih */
+    font-size: 1.1em; /* Ukuran font header */
+}
+
+td {
+    font-size: 1em; /* Ukuran font standar untuk isi tabel */
+    color: #4E342E; /* Warna teks */
+}
+
+tr:nth-child(even) {
+    background-color: #F4ECE2; /* Warna baris */
+}
+
+/* Styling untuk tombol */
+.btn {
+    padding: 8px 15px; /* Padding */
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px; /* Sudut membulat untuk tampilan modern */
+    transition: all 0.3s ease; /* Animasi saat hover */
+}
+
+.btn-delete {
+    background-color: #F44336; /* Warna merah untuk tombol hapus */
+    color: white;
+}
+
+.btn-delete:hover {
+    background-color: #D32F2F; /* Warna merah lebih gelap saat hover */
+}
+
+/* Styling tambahan untuk fokus tombol */
+.btn:focus {
+    outline: 2px solid #BFA78D; /* Garis fokus */
+    outline-offset: 2px;
+}
+
+/* Responsif untuk tampilan mobile */
+@media (max-width: 768px) {
+    body {
+        margin: 10px;
+    }
+
+    table {
+        font-size: 0.9em;
+    }
+
+    .btn {
+        padding: 6px 10px;
+        font-size: 0.9em;
+    }
+}
